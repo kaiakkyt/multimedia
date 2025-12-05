@@ -1,0 +1,22 @@
+name: Multimedia
+version: '1.00.0'
+main: kaiakk.multimedia.Multimedia
+api-version: '1.18'
+authors: [ KaiakK ]
+description: A plugin framework to remove A LOT of boilerplate and make it over 5x easier for plugin creators to code their plugin!
+website: https://modrinth.com/plugin/multimedia
+folia-supported: true
+load: STARTUP
+
+commands:
+  multimedia:
+    description: "Manage Multimedia"
+    usage: "/multimedia <help|info|reload>"
+    permission: multimedia
+    permission-message: "You don't have permission to use this command."
+    aliases: [mm]
+
+permissions:
+  multimedia:
+    description: "Allow use of Multimedia admin commands"
+    default: op
